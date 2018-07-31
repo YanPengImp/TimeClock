@@ -80,12 +80,12 @@ static const NSInteger KDialCount = 60;
 }
 
 - (void)addViews {
-    _hourView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, width - 30)];
+    _hourView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 2, width - 40)];
     _hourView.center = center;
     _hourView.backgroundColor = [UIColor redColor];
     _hourView.layer.anchorPoint = CGPointMake(0.5, 0.95);//锚点 以这个点为支点旋转
     [self addSubview:_hourView];
-    _minView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, width - 20)];
+    _minView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1.5, width - 25)];
     _minView.center = center;
     _minView.backgroundColor = [UIColor blueColor];
     _minView.layer.anchorPoint = CGPointMake(0.5, 0.95);
